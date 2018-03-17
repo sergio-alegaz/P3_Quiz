@@ -304,8 +304,6 @@ exports.playCmd = rl => {
 				log(`Fin del examen. Aciertos:`);
 				biglog(`${score}`, 'red'); //resultado por pantalla
 				score = 0;
-				rl.prompt();
-
 			} else {
 
 				let index1 = parseInt(Math.random()*(toBeResolved.length-1));
