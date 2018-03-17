@@ -323,11 +323,11 @@ exports.playCmd = rl => {
 					.then(a => {
 						if ((a || "").toLowerCase().trim() === (quiz.answer || "").toLowerCase().trim()) {
 							score++
-							log(`\ncorrecto - Lleva ${score} aciertos\n`);
+							log(`\ncorrecto - Lleva ${score} aciertos`);
 							playOne();
 						} else {
-							log(`\nincorrecto\n`);
-							log(`\nFin del examen. Aciertos:\n`);
+							log(`\nincorrecto`);
+							log(`\nFin del examen. Aciertos:`);
 							biglog(`${score}`, 'red');
 							score = 0;
 						}
