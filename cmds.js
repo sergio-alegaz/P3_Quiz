@@ -301,7 +301,7 @@ exports.playCmd = rl => {
 			if (toBeResolved.length === 0) {
 
 				log(`No hay nada más que preguntar.`); 
-				log(`Fin del examen. Aciertos:`);
+				log(`\nFin del examen. Aciertos:`);
 				biglog(`${score}`, 'red'); //resultado por pantalla
 				score = 0;
 			} else {
@@ -323,11 +323,11 @@ exports.playCmd = rl => {
 					.then(a => {
 						if ((a || "").toLowerCase().trim() === (quiz.answer || "").toLowerCase().trim()) {
 							score++
-							log(`\ncorrecto - Lleva ${score} aciertos`);
+							log(`\ncorrecto - Lleva ${score} aciertos\n`);
 							playOne();
 						} else {
-							log(`\nincorrecto`);
-							log(`\nFin del examen. Aciertos:`);
+							log(`\nincorrecto\n`);
+							log(`\nFin del examen. Aciertos:\n`);
 							biglog(`${score}`, 'red');
 							score = 0;
 						}
