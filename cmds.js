@@ -326,8 +326,9 @@ exports.playCmd = rl => {
 							log(`\ncorrecto - Lleva ${score} Aciertos`);
 							playOne();
 						} else {
-							log(`\nincorrecto`);
-							log(`\nFin del examen. Aciertos:`);
+							/*log(`\nincorrecto`);
+							log(`\nFin del examen. Aciertos:`);*/
+							log(`\nincorrecto - fin del examen, aciertos:`)
 							biglog(`${score}`, 'red');
 							score = 0;
 						}
