@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize');
 
-const sequelize = new Sequelize("sqlite:quizzes.squlite", {logging: false}); //objeto que permite acceder a DDBB
+const sequelize = new Sequelize("sqlite:quizzes.sqlite", {logging: false}); //objeto que permite acceder a DDBB
 
 sequelize.define('quiz', {
 	question: {
