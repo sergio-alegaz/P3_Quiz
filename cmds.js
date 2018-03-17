@@ -339,9 +339,9 @@ exports.playCmd = rl => {
 				.catch(error => {
 					errorlog(error.message);
 				})
-				.then(() => {
+				/*.then(() => {
 					rl.prompt();
-				});
+				})*/;
 			} //////
 		}
 
